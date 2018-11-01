@@ -29,8 +29,11 @@ git가 설치 되어 있다면
 실행 
 > npm start
 
+**frontend를 실행하여 작동을 확인 할수도 있습니다**
+https://github.com/terrygogo/reactroutermen 
 
-## 작성했던 순서 
+
+## 작성했던 순서 입니다. 
 
 > mkdir “abc”  
 > cd “abc” 
@@ -48,9 +51,11 @@ https://www.npmjs.com/package/body-parser
 
 https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
 
-```javascript
+
+서버 프로그램을 작성합니다. 
 add new file "index.js"
 
+```javascript
 var express = require('express')
 var bodyParser = require('body-parser')
 var app = express()
@@ -86,6 +91,8 @@ app.listen(3000,function(){
 });
 ```
 
+기본 홈페이지를 하나 작성 합니다. 반드시 있을 필요는 없습니다. 
+
 add folder "dist" and add new file "index.html" 
 
 ```
@@ -103,11 +110,14 @@ add folder "dist" and add new file "index.html"
 </body>
 </html>
 ```
+프로젝트 생성후 처음 vs code를 구동하는 경우라면 디버거 작동 설정이 필요합니다. 
+
 debug -> start -> select node.js & luanch.json ( VC code debugger setting) 
 
 debug -> start 
 
-add to "pacake.json" below to run by command
+혹은 vs code의 터미널이나 명령창에서 실행하기 위해 아래와 같이 설정합니다. 
+add to "pacake.json" below  
 
 "scripts": {
     "start": "node index.js"
@@ -115,15 +125,16 @@ add to "pacake.json" below to run by command
 
 > npm start 
 
-test by postman  or curl 
+frontend 가동전이라도 아래와 같이 수행해서 서버 작동을 확인 할 수 있습니다. 
+test by curl commmand 
 
 > curl http://localhost:3000/hello?babo=mimi
+
 > curl http://localhost:3000/api/echo/ -d "mama=hama"
+
+혹은 postman을 사용하세요
 
 https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=ko
 https://www.getpostman.com/
 
-downlod or clone complete source
-npm install
-npm start 
-or debug start in vs code
+ 
