@@ -1,4 +1,4 @@
-# backend node+express router
+# node+express router 
 
 ## install node.js &  VS Code
 
@@ -34,6 +34,7 @@ https://www.npmjs.com/package/body-parser
 
 https://code.visualstudio.com/docs/nodejs/nodejs-tutorial
 
+```javascript
 add new file "index.js"
 
 var express = require('express')
@@ -69,9 +70,11 @@ app.post("/api/echo", function (req, res) {
 app.listen(3000,function(){
   console.log("Live at Port 3000");
 });
+```
 
 add folder "dist" and add new file "index.html" 
 
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -85,7 +88,7 @@ add folder "dist" and add new file "index.html"
 
 </body>
 </html>
-
+```
 debug -> start -> select node.js & luanch.json ( VC code debugger setting) 
 
 debug -> start 
