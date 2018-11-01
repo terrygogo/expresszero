@@ -13,7 +13,21 @@ https://expressjs.com/en/starter/installing.html
 
 ## 설치 하고 실행하기 
 
+## 설치및 테스트 
 
+git가 설치 되어 있다면 
+
+> git clone https://github.com/terrygogo/expresszero.git
+
+> 아니면 https://github.com/terrygogo/expresszero 에서 zip 파일을 받아 압축을 풀고 
+
+해당 디랙토리로 이동 후 
+
+패키지 설치
+> npm install
+
+실행 
+> npm start
 
 
 ## 작성했던 순서 
